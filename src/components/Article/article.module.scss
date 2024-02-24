@@ -1,0 +1,37 @@
+@import '../../styles/variables.scss';
+
+.wrapper {
+  margin: 26px auto;
+  max-width: 940px;
+}
+
+.article {
+  margin: 0 auto;
+  max-width: 940px;
+  min-height: 80vh;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.15);
+  background: $background-color-base;
+  padding: 15px;
+}
+
+.article-body {
+  padding: 25px 0;
+  font-size: 14px;
+  line-height: 157%;
+  color: $text-color;
+  word-break: break-word;
+  overflow: hidden;
+  h1,
+  h2 {
+    font-size: 20px;
+    line-height: 140%;
+    font-weight: 400;
+  }
+
+  h3,
+  h4 {
+    font-size: 18px;
+    line-height: 140%;
+    font-weight: 400;
+  }
+}

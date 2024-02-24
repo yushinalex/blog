@@ -1,0 +1,223 @@
+@import '../../styles/variables.scss';
+
+.article-card {
+  height: 100%;
+}
+
+.article-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.article-card-info {
+  max-width: 600px;
+}
+
+.article-card-header {
+  display: flex;
+  margin-bottom: 4px;
+  gap: 13px;
+}
+
+.article-card-tittle {
+  margin: 0;
+  min-height: 26px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: $primary-color;
+  word-break: break-all;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  a {
+    text-decoration: none;
+    color: $primary-color;
+  }
+  &--full {
+    -webkit-line-clamp: 3;
+  }
+}
+
+.article-card-likes-button {
+  display: flex;
+  gap: 5px;
+  background: $background-color-base;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+
+.article-card-no-heart {
+  width: 16px;
+  height: 16px;
+  align-self: center;
+  background-image: url(../../assets/empty-heart.svg);
+}
+
+.article-card-heart {
+  width: 16px;
+  height: 16px;
+  align-self: center;
+  background-image: url(../../assets/heart.svg);
+}
+
+.article-card-likes-number {
+  font-size: 12px;
+  line-height: 183%;
+  color: $text-color;
+  align-self: center;
+}
+
+.article-card-tags {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.article-card-tag {
+  font-size: 12px;
+  color: $text-color;
+  line-height: 15px;
+  padding: 2px 5px;
+  border: 1px solid $text-color;
+  border-radius: 2px;
+  word-break: break-all;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+
+  &--full {
+    color: $text-color-secondary;
+    border-color: $text-color-secondary;
+  }
+}
+
+.article-card-user {
+  display: grid;
+  grid-template-areas:
+    'name pic'
+    'date pic';
+}
+
+.article-card-name {
+  grid-area: name;
+  margin-right: 12px;
+  font-size: 18px;
+  line-height: 156%;
+  color: $heading-color;
+  max-width: 240px;
+  word-break: break-word;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+
+  &--full {
+    -webkit-line-clamp: 2;
+  }
+}
+
+.article-card-date {
+  grid-area: date;
+  margin-right: 12px;
+  line-height: 183%;
+  color: $text-color-secondary;
+  text-align: end;
+}
+
+.article-card-avatar {
+  grid-area: pic;
+  align-self: flex-start;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+}
+
+.article-card-description {
+  margin-top: 4px;
+  max-width: 650px;
+
+  &--full {
+    margin-top: 16px;
+  }
+}
+
+.article-card-text {
+  margin: 0;
+  line-height: 183%;
+  color: $text-color;
+  word-break: break-all;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+
+  &--full {
+    color: $text-color-secondary;
+    -webkit-line-clamp: 5;
+  }
+}
+
+.article-card-bottom {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.article-card-edit-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.article-card-delete {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  color: $error-color;
+  border: 1px solid $error-color;
+  border-radius: 4px;
+  width: 78px;
+  height: 31px;
+  background-color: $background-color-base;
+  cursor: pointer;
+}
+
+.article-card-edit {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  color: $success-color;
+  border: 1px solid $success-color;
+  border-radius: 4px;
+  width: 65px;
+  height: 31px;
+  background-color: $background-color-base;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+:global(.ant-popconfirm .ant-popconfirm-message .ant-popconfirm-description) {
+  margin-top: 0;
+}
+
+.fail {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50px;
+  color: $error-color;
+  max-width: 200px;
+}

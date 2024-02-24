@@ -1,0 +1,40 @@
+@import '../../styles/variables.scss';
+
+.articles {
+  margin: 0 auto;
+  max-width: 940px;
+  padding: 26px 0;
+}
+
+.article-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  gap: 26px;
+  padding-bottom: 26px;
+}
+
+.article-list-element {
+  display: block;
+  border-radius: 5px;
+  max-width: 940px;
+  overflow: hidden;
+  height: 140px;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.15);
+  background: $background-color-base;
+  padding: 15px;
+}
+
+.article-list-pagination {
+  display: flex;
+  justify-content: center;
+}
+
+:global(.ant-pagination .ant-pagination-item-active a) {
+  color: #fff;
+}
+
+:global(.ant-pagination .ant-pagination-item-active a:hover) {
+  color: #fff;
+}

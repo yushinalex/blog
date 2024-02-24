@@ -1,0 +1,22 @@
+@import '../../styles/variables.scss';
+
+html {
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 183%;
+  color: #000000d9;
+  background-color: $background;
+}

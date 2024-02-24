@@ -1,0 +1,118 @@
+@import '../../styles/variables.scss';
+
+.header {
+  width: auto;
+  height: 80px;
+  background: $background-color-base;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 22px;
+  align-items: center;
+}
+
+.header-tittle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  margin: 0;
+  a {
+    text-decoration: none;
+    color: $heading-color;
+  }
+}
+
+.header-links {
+  display: flex;
+  gap: 20px;
+
+  &--in {
+    gap: 27px;
+  }
+}
+
+.header-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 109px;
+  height: 51px;
+  background: $background-color-base;
+  cursor: pointer;
+
+  a {
+    text-decoration: none;
+    color: $text-color;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156%;
+  }
+
+  &--in {
+    border: none;
+  }
+
+  &--up {
+    border: 1px solid $success-color;
+    border-radius: 5px;
+
+    a {
+      color: $success-color;
+    }
+  }
+
+  &--create {
+    width: 112px;
+    height: 31px;
+    border: 1px solid $success-color;
+    border-radius: 5px;
+    align-self: center;
+
+    a {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 157%;
+      color: $success-color;
+    }
+  }
+}
+
+.header-user {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+}
+
+.header-username {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+
+  a {
+    text-decoration: none;
+    color: $heading-color;
+  }
+}
+
+.header-image {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: flex;
+  align-self: center;
+}
+
+.header-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 109px;
+  height: 51px;
+  background: $background-color-base;
+  cursor: pointer;
+  color: $text-color;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  border: 1px solid $text-color;
+  border-radius: 5px;
+}

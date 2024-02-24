@@ -1,0 +1,98 @@
+@import '../../styles/variables.scss';
+@import '../../styles/forms.module.scss';
+
+.form {
+  width: 940px;
+}
+
+.article-inputs {
+  margin-top: 21px;
+  display: grid;
+  gap: 21px;
+}
+
+.input {
+  &--tag {
+    width: 300px;
+  }
+}
+
+.textarea {
+  height: 168px;
+  resize: none;
+}
+
+.tags-wrapper {
+  display: flex;
+  gap: 17px;
+}
+
+.tags {
+  display: grid;
+  gap: 2px;
+}
+
+.tag-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: grid;
+  gap: 5px;
+  min-width: 300px;
+  min-height: 40px;
+}
+
+.tag {
+  display: flex;
+  gap: 17px;
+  &:last-child {
+    .add-tag {
+      display: block;
+    }
+  }
+}
+
+.error-tag {
+  max-width: 300px;
+}
+
+.delete-tag {
+  width: 120px;
+  height: 40px;
+  font-family: $second-family;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  border-radius: 4px;
+  background-color: $background-color-base;
+  color: $highlight-color;
+  border: 1px solid $highlight-color;
+  cursor: pointer;
+}
+
+.add-tag {
+  width: 136px;
+  height: 40px;
+  font-family: $second-family;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  border-radius: 4px;
+  background-color: $background-color-base;
+  color: $primary-color;
+  border: 1px solid $primary-color;
+  cursor: pointer;
+  display: none;
+
+  &--show {
+    display: block;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+.button {
+  width: 320px;
+}
